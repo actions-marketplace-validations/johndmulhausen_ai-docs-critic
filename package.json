@@ -1,5 +1,5 @@
 {
-  "name": "open-ai-docs-critic",
+  "name": "ai-docscritique",
   "version": "1.0.0",
   "description": "Open AI powered docs critique",
   "main": "lib/main.js",
