@@ -1,7 +1,7 @@
 {
-  "name": "open-ai-reviewer",
+  "name": "open-ai-docs-critic",
   "version": "1.0.0",
-  "description": "Open AI powered code reviews",
+  "description": "Open AI powered docs critique",
   "main": "lib/main.js",
   "author": "John Mulhausen",
   "license": "MIT",
