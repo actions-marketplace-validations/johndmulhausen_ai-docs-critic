@@ -40,7 +40,7 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
       - name: AI Docs Critic
-        uses: johndmulhausen/ai-docs-critic@main
+        uses: johndmulhausen/ai-docs-critic@1.0
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
