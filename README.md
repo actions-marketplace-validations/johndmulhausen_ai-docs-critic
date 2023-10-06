@@ -26,8 +26,7 @@ review process.
 3. Create a `.github/workflows/main.yml` file in your repository and add the following content:
 
 ```yaml
-name: AI Code Reviewer
-
+name: AI Docs Critic
 on:
   pull_request:
     types:
@@ -40,14 +39,13 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
-
-      - name: AI Code Reviewer
-        uses: your-username/ai-code-reviewer@main
+      - name: AI Docs Critic
+        uses: johndmulhausen/ai-docs-critic@main
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_API_MODEL: "gpt-4" # Optional: defaults to "gpt-4"
-          exclude: "**/*.json, **/*.md" # Optional: exclude patterns separated by commas
+          exclude: "**/*.json, **/*.html, **/*.txt, **/*.yml, **.*.yaml, **/*.toml, **/*.js, **/*.sass, **/*.css" # Optional: exclude patterns separated by commas
 ```
 
 4. Replace `your-username` with your GitHub username or organization name where the AI Code Reviewer repository is
