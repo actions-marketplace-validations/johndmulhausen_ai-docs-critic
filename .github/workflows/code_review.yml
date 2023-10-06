@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Code Review
+      - name: Docs critique
         uses: johndmulhausen/ai-docscritique@main
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
