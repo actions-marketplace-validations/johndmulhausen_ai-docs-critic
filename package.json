@@ -1,7 +1,7 @@
 {
   "name": "ai-docscritique",
   "version": "1.0.0",
-  "description": "Open AI powered docs critique",
+  "description": "GPT-powered docs critique",
   "main": "lib/main.js",
   "author": "John Mulhausen",
   "license": "MIT",
