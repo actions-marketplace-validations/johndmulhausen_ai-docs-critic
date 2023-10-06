@@ -1,4 +1,4 @@
-name: Docs Critique with OpenAI
+name: AI Docs Critic
 on:
   pull_request:
     types:
@@ -6,14 +6,15 @@ on:
       - synchronize
 permissions: write-all
 jobs:
-  code_review:
+  review:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout Repo
         uses: actions/checkout@v3
-      - name: Docs critique
-        uses: johndmulhausen/ai-docscritique@main
+      - name: AI Docs Critic
+        uses: johndmulhausen/ai-docs-critic@main
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          exclude: "yarn.lock,dist/**"
+          OPENAI_API_MODEL: "gpt-4" # Optional: defaults to "gpt-4"
+          exclude: "**/*.json, **/*.html, **/*.txt, **/*.yml, **.*.yaml, **/*.toml, **/*.js, **/*.sass, **/*.css" # Optional: exclude patterns separated by commas
