@@ -1,4 +1,6 @@
-# AI Code Reviewer
+# AI Docs Critic
+
+From @johnmulhausen: This is a hacky fork of https://github.com/freeedcom/ai-codereviewer by @freeedcom
 
 AI Code Reviewer is a GitHub Action that leverages OpenAI's GPT-4 API to provide intelligent feedback and suggestions on
 your pull requests. This powerful tool helps improve code quality and saves developers time by automating the code
