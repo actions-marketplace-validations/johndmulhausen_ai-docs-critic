@@ -1,5 +1,5 @@
 {
-  "name": "ai-docscritique",
+  "name": "ai-docs-critic",
   "version": "1.0.0",
   "description": "GPT-powered docs critique",
   "main": "lib/main.js",
