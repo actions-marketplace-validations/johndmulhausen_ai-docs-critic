@@ -1,6 +1,6 @@
 # AI Docs Critic
 
-From @johnmulhausen: This is a hacky fork of https://github.com/freeedcom/ai-codereviewer by @freeedcom, adapted for docs review purposes. The README for his AI Code Reviewer is as follows:
+From @johnmulhausen: This is a hacky fork of https://github.com/freeedcom/ai-codereviewer by @freeedcom, adapted for docs review purposes. The README for their AI Code Reviewer is as follows:
 
 ## AI Code Reviewer
 
