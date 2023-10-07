@@ -23,7 +23,7 @@ review process.
 2. Add the OpenAI API key as a GitHub Secret in your repository with the name `OPENAI_API_KEY`. You can find more
    information about GitHub Secrets [here](https://docs.github.com/en/actions/reference/encrypted-secrets).
 
-3. Create a `.github/workflows/main.yml` file in your repository and add the following content:
+3. Create a `.github/workflows/ai-docs-critic.yml` file in your repository and add the following content:
 
 ```yaml
 name: AI Docs Critic
@@ -48,8 +48,8 @@ jobs:
           exclude: "**/*.json, **/*.html, **/*.txt, **/*.yml, **.*.yaml, **/*.toml, **/*.js, **/*.sass, **/*.css" # Optional: exclude patterns separated by commas
 ```
 
-4. Replace `your-username` with your GitHub username or organization name where the AI Code Reviewer repository is
-   located.
+4. Add a GitHub token as a secret to your repository with the name `GITHUB_TOKEN`. You can find more information about
+   GitHub Secrets [here](https://docs.github.com/en/actions/reference/encrypted-secrets).
 
 5. Customize the `exclude` input if you want to ignore certain file patterns from being reviewed.
 
