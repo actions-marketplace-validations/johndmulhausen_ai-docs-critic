@@ -6,7 +6,7 @@ on:
       - synchronize
 permissions: write-all
 jobs:
-  review:
+  ai-docs-critic:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
